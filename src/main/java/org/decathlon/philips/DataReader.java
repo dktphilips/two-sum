@@ -9,7 +9,6 @@ public class DataReader {
 
     private List<Integer> dataList;
     private Integer target;
-    private String method;
 
     /**
      * 默认构造函数
@@ -18,7 +17,6 @@ public class DataReader {
     {
         this.dataList=new ArrayList<Integer>();
         this.target = 0;
-        this.method = "Reader/InputStream";
     }
 
     public DataReader(String fileName)
@@ -73,13 +71,9 @@ public class DataReader {
                 {
                     e.printStackTrace();
                 }
-
             }
         }
     }
 
-    private void readFileWithFileChannel()
-    {
 
-    }
 }
